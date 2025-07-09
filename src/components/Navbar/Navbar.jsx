@@ -3,6 +3,7 @@ import "./Navbar.css";
 import nav_underline from "../../assets/nav_underline.svg";
 import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
+import logo from "../../assets/logo.jpg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("about");
@@ -26,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <img src="src/assets/logo.jpg" alt="Logo" className="navbar-logo" />
+      <img src={logo} alt="Logo" className="navbar-logo" />
 
       {!isMenuOpen && (
         <img
