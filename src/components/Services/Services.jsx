@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Services.css";
-import theme_pattern from "D:/Portfolio/src/assets/theme_pattern.svg";
+import theme_pattern from "../../assets/theme_pattern.svg";
 import Services_Data from "../../assets/services_data";
 import arrow_icon from "../../assets/arrow_icon.svg";
 
