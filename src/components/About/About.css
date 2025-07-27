@@ -1,4 +1,4 @@
-.about{
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,39 +7,40 @@
     margin: 80px 170px;
 }
 
-.about-title{
+.about-title {
     position: relative;
 }
 
-.about-title h1{
+.about-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
 }
 
-.about-title img{
+.about-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
 
-.about-sections{
+.about-sections {
     display: flex;
     gap: 80px;
 }
-.about-sections img{
+
+.about-sections img {
     height: 500px;
     width: 400px;
 }
 
-.about-right{
+.about-right {
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-.about-para{
+.about-para {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -48,68 +49,120 @@
 }
 
 .about-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-skill {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .about-skill p {
-  width: 300px; /* Fixed width ensures all lines start at the same point */
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
 }
 
 .bar {
-  flex: 1; /* Takes remaining space */
+    flex: 1;
+    min-width: 120px;
 }
 
 .bar hr {
-  height: 8px;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
-  margin: 0;
+    height: 8px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    margin: 0;
 }
 
-@media(max-width:768px){
-    .about{
-        gap: 80px;
-        margin: 50px 70px;
-        align-items: start;
+/* Tablet */
+@media (max-width: 768px) {
+    .about {
+        gap: 60px;
+        margin: 50px 40px;
+        align-items: flex-start;
     }
-    .about-title h1{
+
+    .about-title h1 {
         font-size: 50px;
         padding: 0;
     }
-    .about-title img{
+
+    .about-title img {
         width: 130px;
         right: -20px;
     }
-    .about-sections{
+
+    .about-sections {
         flex-direction: column;
-    }
-    .about-left{
-        display: none;
-    }
-    .about-para{
-        font-size: 18px;
-        line-height: 32px;
-    }
-    .about-skill{
-        gap: 20px;
-        align-items: center;
+        gap: 40px;
     }
 
-    .about-skill p{
-        font-size: 20px;
+    .about-left {
+        display: none;
     }
-    .about-skill hr{
+
+    .about-para {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .about-skill {
+        align-items: center;
+        gap: 15px;
+    }
+
+    .about-skill p {
+        font-size: 18px;
+    }
+
+    .bar hr {
         height: 6px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .about {
+        margin: 40px 20px;
+        gap: 50px;
+    }
+
+    .about-title h1 {
+        font-size: 36px;
+    }
+
+    .about-title img {
+        width: 100px;
+        right: -10px;
+    }
+
+    .about-para {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .about-skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-skill p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .bar {
+        width: 100%;
+    }
+
+    .bar hr {
+        height: 5px;
     }
 }
