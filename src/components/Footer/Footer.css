@@ -122,5 +122,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+  }
+  .footer-bottom-left{
+    font-size: 16px;
   }
 }
