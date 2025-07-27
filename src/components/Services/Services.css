@@ -42,7 +42,6 @@
   background-color: transparent;
   position: relative;
   height: auto;
-  width: 100%;
 }
 
 .services-format:hover {
@@ -76,7 +75,7 @@
 }
 
 .service-desc.expanded {
-  max-height: 500px;
+  max-height: 500px; /* large enough to fit all content */
 }
 
 .services-readmore {
