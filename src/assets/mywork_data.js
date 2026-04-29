@@ -5,9 +5,9 @@ import prj3 from '../assets/prj3.jpg'
 const mywork_data = [
     {
         w_no: 1,
-        w_name: "Task Flow",
+        w_name: "WorkVisibility",
         w_img: prj3,
-        w_link: "https://taskflow-collaborative.vercel.app/",
+        w_link: "https://work-visibility.vercel.app/",
 
     },
     {
